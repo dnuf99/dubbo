@@ -145,6 +145,13 @@
         <file_encoding>UTF-8</file_encoding>
 
     </properties>
+    <distributionManagement>
+        <repository>
+            <id>snapshots</id>
+            <name>snapshots</name>
+            <url>http://172.16.8.10:9090/nexus/content/repositories/snapshots/</url>
+        </repository>
+    </distributionManagement>
     <dependencyManagement>
         <dependencies>
             <!-- Common libs -->
