@@ -73,8 +73,7 @@ public class Constants {
 
     public static final String $ECHO = "$echo";
 
-    public static final int DEFAULT_IO_THREADS = Runtime.getRuntime()
-            .availableProcessors() + 1;
+    public static final int DEFAULT_IO_THREADS = Math.min(Runtime.getRuntime().availableProcessors() + 1, 32);
 
     public static final String DEFAULT_PROXY = "javassist";
 
@@ -295,6 +294,8 @@ public class Constants {
     public static final String PID_KEY = "pid";
 
     public static final String TIMESTAMP_KEY = "timestamp";
+
+    public static final String REMOTE_TIMESTAMP_KEY = "remote.timestamp";
 
     public static final String WARMUP_KEY = "warmup";
 
