@@ -5,4 +5,6 @@
 
 Pls. visit [dubbo.io](http://dubbo.io) for more information.
 
-mvn deploy:deploy-file -DgroupId=com.alibaba -DartifactId=dubbo -Dversion=2.5.6.1-SNAPSHOT -Dpackaging=jar -Dfile=F:\Workspace\99fund\dubbo\dubbo\target\dubbo-2.5.6.1-SNAPSHOT.jar -DrepositoryId=snapshots -Durl=http://172.16.8.10:9090/nexus/content/repositories/snapshots/
+mvn deploy -N
+cd dubbo
+mvn deploy
